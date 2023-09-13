@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEV LINK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <div class="container-img">
+            <img src="https://avatars.githubusercontent.com/u/93744970?v=4" alt="" class="img-perfil">
+        </div>
+
+        <span>@jheanbryan</span>
+        
+        <div class="container-mudar-tema">
+            <div class="fundo"></div>
+            <div class="container-icone">
+                <img src="assets/theme/sun-regular.svg" alt="" class="icon-tema" id="sol">
+                <img src="assets/theme/moon-regular.svg" alt="" class="icon-tema" id="lua">
+            </div>
+        </div>
+
+        <ul>
+            <li>Inscreva-se no NLW</li>
+            <li>Baixar e-book</li>
+            <li>Veja meu portfolio</li>
+            <li>Conheça o explorer</li>
+        </ul>
+
+        <div class="container-icons">
+            <img src="assets/icons/github.svg" alt="">
+            <img src="assets/icons/instagram.svg" alt="">
+            <img src="assets/icons/youtube.svg" alt="">
+            <img src="assets/icons/linkedin.svg" alt="">
+        </div>
+    </main>
+    <script>
+        const sol = document.getElementById('sol');
+        const lua = document.getElementById('lua');
+        const containerMudarTema = document.querySelector('.container-icone')
+        sol.addEventListener('click', function(){
+            sol.style.display = 'none';
+            lua.style.display = 'block';
+            containerMudarTema.style.marginLeft = '30px'
+        })
+
+        lua.addEventListener('click', function(){
+            lua.style.display = 'none';
+            sol.style.display = 'block';
+            containerMudarTema.style.marginLeft = '0'
+        })
+    </script>
+</body>
+</html>

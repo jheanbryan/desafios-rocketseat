@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: var(--cor-primaria);
+}
+
+:root{
+    --bg-escuro: "assets/backgrounds/bg-desktop.jpg";
+    --bg-claro: "assets/backgrounds/bg-desktop-light.jpg";
+
+    --fundo-primario: rgba(220, 220, 220, 0.298);
+    --fundo-secundario: black;
+    
+    --cor-primaria: white;
+    --cor-secundaria: black;
+}
+body{
+    background-image: url("assets/backgrounds/bg-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}   
+.container{
+    max-width: 800px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 15px;
+    margin-top: 50px;
+}
+.container-img{
+    max-width: 100px;
+}
+.img-perfil{
+    width: 100%;
+    border-radius: 50%;
+}
+.container-mudar-tema{
+    display: flex;
+    align-items: center;
+}
+.fundo{
+    width: 60px;
+    height: 20px;
+    border-radius: 10px;    
+    border: 1px solid gray;
+    padding: 3px;
+}
+.container-icone{
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:5px;
+}
+.icon-tema{
+    width: 20px;
+    cursor: pointer;
+}
+#sol{
+}
+#lua{
+    display: none;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    max-width: 300px;
+    width: 100%;
+}
+ul li{
+    padding: 15px;
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--fundo-primario);
+}
+.container-icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.container-icons img{
+    width: 20px;
+}
