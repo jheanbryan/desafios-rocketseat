@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,26 +31,41 @@
         </ul>
 
         <div class="container-icons">
-            <img src="assets/icons/github.svg" alt="">
-            <img src="assets/icons/instagram.svg" alt="">
-            <img src="assets/icons/youtube.svg" alt="">
-            <img src="assets/icons/linkedin.svg" alt="">
+            <a href="https://github.com/jheanbryan" target="_blank">
+                <img src="assets/icons/github.svg" alt="">
+            </a>
+
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="assets/icons/instagram.svg" alt="">
+            </a>
+
+            <a href="https://www.youtube.com" target="_blank">
+                <img src="assets/icons/youtube.svg" alt="">
+            </a>
+
+            <a href="https://www.linkedin.com/in/jhean-bryan/" target="_blank">
+                <img src="assets/icons/linkedin.svg" alt="">
+            </a>
         </div>
     </main>
     <script>
         const sol = document.getElementById('sol');
         const lua = document.getElementById('lua');
         const containerMudarTema = document.querySelector('.container-icone')
+        const body = document.getElementsByTagName('body')[0];
+
         sol.addEventListener('click', function(){
             sol.style.display = 'none';
             lua.style.display = 'block';
-            containerMudarTema.style.marginLeft = '30px'
+            containerMudarTema.style.marginLeft = '30px';
+            body.classList.add("ligth");
         })
 
         lua.addEventListener('click', function(){
             lua.style.display = 'none';
             sol.style.display = 'block';
             containerMudarTema.style.marginLeft = '0'
+            body.classList.remove("ligth");
         })
     </script>
 </body>
