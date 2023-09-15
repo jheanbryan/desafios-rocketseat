@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: var(--text-color);
+}
+
+:root{
+    --bg-url: url(assets/backgrounds/bg-desktop.jpg);
+    --text-color: white;
+    --stroke-color: rgba(255, 255, 255, 0.5);
+    --surface-color: rgba(255, 255, 255, 0.1);
+}
+
+.ligth{
+    --bg-url: url(assets/backgrounds/bg-desktop-light.jpg);
+    --text-color: black;
+    --stroke-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.05);
+    --bg-icon: black;
+}
+body{
+    background-image: var(--bg-url);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}   
+.container{
+    max-width: 800px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 15px;
+}
+.container-img{
+    max-width: 100px;
+}
+.img-perfil{
+    width: 100%;
+    border-radius: 50%;
+}
+.container-mudar-tema{
+    display: flex;
+    align-items: center;
+}
+.fundo{
+    width: 60px;
+    height: 20px;
+    border-radius: 10px;    
+    border: 1px solid gray;
+    padding: 3px;
+}
+.container-icone{
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:5px;
+    background-color: white;
+}
+.icon-tema{
+    width: 20px;
+    cursor: pointer;
+}
+#sol{
+}
+#lua{
+    display: none;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    max-width: 300px;
+    width: 100%;
+}
+ul li{
+    padding: 15px;
+    border: 1px solid var(--stroke-color);
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--surface-color);
+}
+.container-icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.container-icons img{
+    width: 20px;
+    background-color: var(--bg-icon);
+    padding: 2px;
+    border-radius: 50%;
+}
