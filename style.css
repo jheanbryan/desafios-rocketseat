@@ -24,7 +24,8 @@ body{
     background-image: var(--bg-url);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
+
 }   
 .container{
     max-width: 800px;
@@ -62,12 +63,11 @@ body{
     justify-content: center;
     padding:5px;
     background-color: white;
+    transition: 0.5s;
 }
 .icon-tema{
     width: 20px;
     cursor: pointer;
-}
-#sol{
 }
 #lua{
     display: none;
@@ -100,4 +100,13 @@ ul li{
     background-color: var(--bg-icon);
     padding: 2px;
     border-radius: 50%;
+}
+
+@media (max-width: 800px){
+    :root{
+        --bg-url: url(assets/backgrounds/bg-mobile.jpg);
+    }
+    .ligth{
+        --bg-url: url(assets/backgrounds/bg-mobile-light.jpg);
+    }
 }
